@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=uft-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" >
+<title>Esay Home - Esay Life</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+.Style1 {
+	color: #00FF66;
+	font-size: 36px;
+}
+.Style2 {
+	color: #00FFFF;
+	font-size: 34px;
+}
+-->
+</style>
+</head>
+<BODY BACKGROUND="img/wall1.png"> 
+	<script type="text/javascript" src="zepto.min.js"></script>
+
+<script type="text/javascript">
+function ledon()
+{
+$('#content').load('/arduino/ledon');
+}
+function ledoff()
+{
+$('#content').load('/arduino/ledoff');
+}
+function led2on()
+{
+$('#content').load('/arduino/led2on');
+}
+function led2off()
+{
+$('#content').load('/arduino/led2off');
+}
+function led3on()
+{
+$('#content').load('/arduino/led3on');
+}
+function led3off()
+{
+$('#content').load('/arduino/led3off');
+}
+function led4on()
+{
+$('#content').load('/arduino/led4on');
+}
+function ledo4ff()
+{
+$('#content').load('/arduino/led4off');
+}
+function led5on()
+{
+$('#content').load('/arduino/led5on');
+}
+function led5off()
+{
+$('#content').load('/arduino/led5off');
+}
+
+</script>
+
+
+
+	</head>
+<center><img src="img/house.png" width="110" height="110" style="width:80" /> <br>
+  <span class="Style1">Esay Home - Esay Life  
+  </span>
+</center>
+	<body onload="setInterval(refresh, 500);">
+		<span id="content" ></span>
+        <table align="center"  >
+          <tr>
+            <td align="center"><button class="btn btn-success" onClick="ledon()">Lights ON</button></td>
+            <td align="center"><img src="img/light on.png" width="42" height="43"></td>
+            <td align="center"><span class="Style2">LIGHTS</span></td>
+            <td align="center"><button class="btn btn-danger" onClick="ledoff()">Lights OFF</button></td>
+          </tr>
+          <tr>
+            <td align="center"><button class="btn btn-danger" onClick="led2on()"> OPEN Door</button></td>
+		
+            <td align="center"><img src="img/light on.png" width="42" height="43"></td>
+			 <td align="center"><span class="Style2">DOOR</span></td>
+             <td align="center"><button class="btn btn-danger" onClick="led2off()">CLOSE Door </button>
+          </tr>
+          <tr>
+            <td align="center"><button class="btn btn-mini btn-primary" onClick="led3on()">OPEN Windo</button></td>
+			
+            <td align="center"><img src="img/light on.png" width="42" height="43"></td>
+			 <td align="center"><span class="Style2">WINDOWS</span></td>
+             <td align="center"><button class="btn btn-danger" onClick="led3off()">CLOSE Wind </button>
+          </tr>
+          <tr>
+            <td align="center"><button class="btn bnt-mini btn-warning" onClick="led4on()"> OUT SIDE*O  </button></td>
+			
+            <td align="center"><img src="img/light on.png" width="42" height="43"></td>
+			 <td align="center"><span class="Style2">LIGHTS OUT SIDE </span></td>
+             <td align="center"><button class="btn btn-danger" onClick="ledo4ff()">OUT SIDE*F </button>
+          </tr>
+          <tr>
+            <td align="center"><button class="btn btn-info" onClick="led5on()">ARME MODE </button></td>
+			
+            <td align="center"><img src="img/light on.png" width="42" height="43"></td>
+			 <td align="center"><span class="Style2">SAFE MODE </span></td>
+             <td align="center"><button class="btn btn-danger" onClick="led5off()">DESARME MODE </button>
+          </tr>
+        </table>
+		<BR>
+		<BR><BR>
+		<a href="#" class="btn btn-block btn-lg btn-info">ARABIC LANGUGE ???????????????</a><BR /><BR />
+</body>
+
+</html>
+

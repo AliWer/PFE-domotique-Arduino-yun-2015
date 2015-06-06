@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--begin phoneeeeeeeee-->
+<script type="text/javascript">
+// With JQuery
+$("#ex5").slider();
+
+// Without JQuery
+var slider = new Slider('#ex5');
+
+$("#destroyEx5Slider").click(function() {
+
+	// With JQuery
+	$("#ex5").slider('destroy');
+
+	// Without JQuery
+	slider.destroy();
+});
+</script>
+<!--end phoneeeeeeeeeee-->
+<!--begin arduino-->
+<meta http-equiv="Content-Type" content="text/html; charset=uft-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" >
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+.Style1 {
+	color: #00FF66;
+	font-size: 36px;
+}
+.Style2 {
+	color: #00FFFF;
+	font-size: 34px;
+}
+-->
+</style>
+<!--end arduino -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Controle Eclairage </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/round-about.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	<!--begin arduino-->
+	<script type="text/javascript" src="zepto.min.js"></script>
+
+<script type="text/javascript">
+function ledon()
+{
+$('#content').load('/arduino/ledon');
+}
+function ledoff()
+{
+$('#content').load('/arduino/ledoff');
+}
+function led2on()
+{
+$('#content').load('/arduino/led2on');
+}
+function led2off()
+{
+$('#content').load('/arduino/led2off');
+}
+function led3on()
+{
+$('#content').load('/arduino/led3on');
+}
+function led3off()
+{
+$('#content').load('/arduino/led3off');
+}
+function led4on()
+{
+$('#content').load('/arduino/led4on');
+}
+function ledo4ff()
+{
+$('#content').load('/arduino/led4off');
+}
+function led5on()
+{
+$('#content').load('/arduino/led5on');
+}
+function led5off()
+{
+$('#content').load('/arduino/led5off');
+}
+
+</script>
+
+
+
+	<!--end arduino-->
+
+</head>
+
+<body background="img/bg2.jpeg" onLoad="setInterval(refresh, 500);">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+		
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" charset="cp866">Easy Home Easy Life</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                       <a href="Propos.html">Propos</a>
+                    </li>
+                    <li>
+                        <a href="Services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Introduction Row -->
+        <div class="row">
+
+
+            <div class="col-lg-12">
+               <!-- <h1 class="page-header">About Us
+                    <small>It's Nice to Meet You!</small>
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?</p>-->
+            </div>
+        </div>
+
+        <!-- Team Members Row -->
+        <div class="row">
+            <div class="col-lg-12">
+             <!--   <h2 class="page-header">Our Team</h2>--><br/><br/>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center" style="margin:auto">
+               <a href="#"></a>
+                <h3 style="color:#99CC00"><small></small>                </h3>
+                <p></p>
+          </div>
+		<!--	begin arduino -->
+		<br/><br/><br/>
+		
+		<span id="content" ></span>
+      
+		<BR>
+		<BR><BR>
+
+		<!--	end arduino--><!-- Footer -->
+        <footer>
+            <div class="row">
+              <!-- /.col-lg-12 -->
+              <div class="col-lg-12">
+               <p style="color:#FFFFFF; size:portrait"  <strong>De nombreuses initiatives ont introduit la domotique et les habitats intelligents comme une solution possible pour compenser ce handicap. 
+			Cependant,tres peu de ces realisations se sont interessees a la conception de systemes intelligents
+pour permettre aux personnes non expertes de ces technologies de
+modeliser un environnement domotique et de l'adapter aux personnes dependantes.
+Cet article propose un ot de conception comprenant une approche
+composant pour modeliser l'architecture du systeme et une offre de services repondant aussi bien aux besoins des concepteurs que des utilisateurs, il permet d'automatiser la generation du
+
+code de controle-commande domotique.<br>
+è Creation d'une application embarque pour controle tous les equipements
+electrique dans la maison.<br>
+è Garanti la facilite d'utilisation d'application.<br>
+è Identique et simple a installe aux tous equipement.<br>
+è Simplie la vie prive.<br>
+è Un sens d'independance et pas besoin d'autre aide humain.<br>
+è Eviter ou diminution d'un sentiment du handicap et la manque de confiance en soi meme a la maison.</strong><br><br>
+<p align="center">
+<img src="img/sevice.jpg" width="400" height="200" border="8"></p></p>
+              </div>
+          </div>
+		  <br><br><br><br><br><br><br>
+            <!-- /.row --><hr>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
